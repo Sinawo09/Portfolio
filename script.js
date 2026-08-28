@@ -77,7 +77,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll(
-    '.skill-card, .project-card, .tl-card, .exp-card, .contact-card, .stat, .about-card'
+    '.skill-card, .project-card, .tl-card, .exp-card, .contact-card, .stat, .about-card, .cert-card'
 ).forEach(el => {
     el.classList.add('reveal');
     observer.observe(el);

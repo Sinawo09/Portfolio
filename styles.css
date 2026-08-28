@@ -790,24 +790,58 @@ img { max-width: 100%; }
     .avatar-ring { width: 220px; height: 220px; }
     .avatar { font-size: 3.5rem; }
     .section { padding: 72px 0; }
+    .navbar-collapse {
+        background: rgba(15,14,23,0.97);
+        border-radius: var(--radius);
+        padding: 16px;
+        margin-top: 10px;
+    }
+    .nav-link { color: rgba(255,255,255,0.85) !important; padding: 10px 14px !important; }
+    #mainNav.scrolled .nav-link { color: rgba(255,255,255,0.85) !important; }
+    .nav-cta { display: inline-block; margin-top: 6px; }
 }
 @media (max-width: 767px) {
-    .section { padding: 60px 0; }
-    .hero-name { font-size: 2.8rem; }
+    .section { padding: 56px 0; }
+    .hero-name { font-size: 2.6rem; }
+    .hero-bio { font-size: 0.92rem; }
     .tl-achievements { grid-template-columns: 1fr; }
     .exp-head { flex-direction: column; }
-    .stats-row { gap: 10px; }
-    .stat { min-width: 70px; padding: 14px 8px; }
-    .demo-creds-row { flex-direction: column; align-items: flex-start; gap: 4px; }
-    .demo-value { max-width: 100%; word-break: break-all; white-space: normal; }
+    .stats-row { gap: 8px; }
+    .stat { min-width: 60px; padding: 12px 8px; }
+    .stat h3 { font-size: 1.4rem; }
     .exp-card { padding: 20px; }
-    .about-card { padding: 24px; }
-    .tl-card { padding: 18px; }
+    .about-card { padding: 20px; }
+    .tl-card { padding: 16px; }
+    .skill-card { padding: 20px; }
+    .section-heading { font-size: 1.7rem; }
+    .timeline::before { left: 14px; }
+    .tl-item { padding-left: 44px; }
+    .tl-dot { left: 5px; }
+    .cert-img-wrap { height: 140px; }
+    .contact-card { padding: 20px; }
 }
 @media (max-width: 575px) {
-    .hero-actions { flex-direction: column; }
-    .btn-main, .btn-ghost { text-align: center; }
-    .hero-visual { max-width: 240px; margin: 0 auto; }
-    .proj-actions { display: flex; flex-direction: column; gap: 8px; }
-    .btn-live { justify-content: center; }
+    .hero-name { font-size: 2.1rem; }
+    .hero-role { font-size: 0.95rem; }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .btn-main, .btn-ghost { text-align: center; width: 100%; }
+    .hero-visual { max-width: 200px; margin: 0 auto; }
+    .avatar-ring { width: 180px; height: 180px; }
+    .avatar { font-size: 2.8rem; }
+    .hero-links { justify-content: center; }
+    .about-avatar { width: 80px; height: 80px; font-size: 1.8rem; }
+    .stats-row { justify-content: center; }
+    .stat { flex: 0 0 calc(50% - 8px); }
+    .section-header { margin-bottom: 36px; }
+    .tl-tags { gap: 5px; }
+    .tl-tags span { font-size: 0.7rem; }
+    .exp-tags span { font-size: 0.72rem; }
+    .exp-logo { width: 48px; height: 48px; font-size: 1rem; }
+    .exp-meta h4 { font-size: 1rem; }
+    .cert-img-wrap { height: 120px; }
+    .footer .row { text-align: center !important; }
+    .footer-socials { margin-top: 8px; }
+    .footer-socials a { margin: 0 4px; }
+    .contact-card { padding: 16px; }
+    .contact-card i { font-size: 1.4rem; }
 }
