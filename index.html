@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinawo Mthiyane | Web Development Intern</title>
+    <title>Sinawo Mthiyane | Junior Web Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href="chatbot.css" rel="stylesheet">
 </head>
 <body>
 
@@ -45,7 +46,7 @@
                 <div class="col-lg-6 order-2 order-lg-1">
                     <p class="hero-tag"> Hello, I'm</p>
                     <h1 class="hero-name">Sinawo<br><span>Mthiyane</span></h1>
-                    <p class="hero-role">Web Development Intern <span class="divider">|</span> CAPACITI</p>
+                    <p class="hero-role">Junior Web Developer <span class="divider">|</span> CAPACITI</p>
                     <p class="hero-bio">Dedicated professional with a background in Tourism and Customer Service, currently expanding into Web Development as an intern at CAPACITI. Fluent in English and IsiXhosa, passionate about delivering excellent service and building digital solutions.</p>
                     <div class="hero-actions">
                         <a href="#experience" class="btn-main">View My Work</a>
@@ -83,7 +84,7 @@
                         <div class="about-details">
                             <div class="detail-row"><i class="fas fa-map-marker-alt"></i><span>Phillipi Park, Cape Town, South Africa</span></div>
                             <div class="detail-row"><i class="fas fa-graduation-cap"></i><span>False Bay College – N6 Tourism</span></div>
-                            <div class="detail-row"><i class="fas fa-briefcase"></i><span>Web Development Intern @ CAPACITI</span></div>
+                            <div class="detail-row"><i class="fas fa-briefcase"></i><span>Junior Web Developer @ CAPACITI</span></div>
                             <div class="detail-row"><i class="fas fa-language"></i><span>English & IsiXhosa</span></div>
                             <div class="detail-row"><i class="fas fa-envelope"></i><span>mthiyanesinawo8@gmail.com</span></div>
                             <div class="detail-row"><i class="fas fa-phone"></i><span>065 940 2925 / 072 251 8623</span></div>
@@ -99,7 +100,7 @@
                         <div class="stat"><h3>2+</h3><p>Years Experience</p></div>
                         <div class="stat"><h3>N6</h3><p>Tourism Cert</p></div>
                         <div class="stat"><h3>2</h3><p>Languages</p></div>
-                        <div class="stat"><h3>Now</h3><p>Web Dev Intern</p></div>
+                        <div class="stat"><h3>Now</h3><p>Junior Web Dev</p></div>
                     </div>
                 </div>
             </div>
@@ -481,6 +482,38 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- ===== CHATBOT WIDGET ===== -->
+    <div id="chat-widget">
+        <div id="chat-window">
+            <div class="chat-header">
+                <div class="chat-avatar">SM</div>
+                <div class="chat-header-info">
+                    <h4>Sinawo's Assistant</h4>
+                    <span>Online — Ask me anything!</span>
+                </div>
+                <button id="chat-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-suggestions">
+                <button class="suggestion-btn">Skills</button>
+                <button class="suggestion-btn">Projects</button>
+                <button class="suggestion-btn">Experience</button>
+                <button class="suggestion-btn">Education</button>
+                <button class="suggestion-btn">Contact</button>
+                <button class="suggestion-btn">Hire her</button>
+            </div>
+            <div id="chat-messages"></div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask me about Sinawo..." autocomplete="off">
+                <button id="chat-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button id="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment-dots"></i>
+            <span class="chat-notif"></span>
+        </button>
+    </div>
+
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
