@@ -7,21 +7,21 @@ const knowledge = {
     },
     name: {
         patterns: ['who are you', 'who is sinawo', 'tell me about sinawo', 'about sinawo', 'introduce', 'sinawo mthiyane'],
-        response: () => `Sinawo Mthiyane is a Junior Web Developer based in Cape Town, South Africa 🇿🇦. She's currently interning at <strong>CAPACITI</strong>, building real-world web applications. She also has a strong background in Tourism and Customer Service, and is fluent in both <strong>English</strong> and <strong>IsiXhosa</strong>.`
+        response: () => `Sinawo Mthiyane is a Junior Web Developer based in Cape Town, South Africa 🇿🇦. She's currently working at <strong>CAPACITI</strong>, building real-world web applications. She also has a strong background in Tourism and Customer Service, and is fluent in both <strong>English</strong> and <strong>IsiXhosa</strong>.`
     },
     skills: {
         patterns: ['skills', 'technologies', 'tech stack', 'what can she do', 'what does she know', 'coding', 'programming', 'languages', 'tools'],
         response: () => `Sinawo's skill set includes: <br><br>
-💻 <strong>Web Development:</strong> HTML5, CSS3, JavaScript, Bootstrap, Responsive Design<br>
 🎧 <strong>Customer Service:</strong> Call handling, Email writing, Payment processing, Client relations<br>
 ✈️ <strong>Tourism:</strong> Travel advisory, Booking management, Travel information<br>
 🌟 <strong>Other:</strong> Record management, Multilingual (EN & IsiXhosa), Team collaboration`
     },
     projects: {
         patterns: ['projects', 'project', 'work', 'portfolio', 'built', 'apps', 'applications', 'what has she built', 'capaciti project'],
-        response: () => `Sinawo has built two projects at CAPACITI: <br><br>
+        response: () => `Sinawo has built three projects at CAPACITI: <br><br>
 🔵 <strong>Sinawo App</strong> — A responsive web application showcasing interactive UI and modern web design. <a href="https://sinawo.lovable.app/" target="_blank">View Live ↗</a><br><br>
-🟣 <strong>GovGuide AI</strong> — An AI-powered app that helps users navigate government services with ease. <a href="https://govguideai.lovable.app/" target="_blank">View Live ↗</a>`
+🟣 <strong>GovGuide AI</strong> — An AI-powered app that helps users navigate government services with ease. <a href="https://govguideai.lovable.app/" target="_blank">View Live ↗</a><br><br>
+🟠 <strong>AI Sentiment Analyzer</strong> — A tool that analyses text and detects whether the sentiment is positive, negative, or neutral in real time. <a href="https://aisentiment-sp7zjfjg.manus.space/analyzer" target="_blank">View Live ↗</a>`
     },
     experience: {
         patterns: ['experience', 'work experience', 'jobs', 'worked', 'employment', 'career', 'job history', 'previous'],
@@ -34,8 +34,8 @@ Assisted customers, handled calls & emails, and contributed to project brainstor
     education: {
         patterns: ['education', 'study', 'studied', 'school', 'college', 'qualification', 'degree', 'certificate', 'matric', 'n6', 'tourism qualification'],
         response: () => `Sinawo's educational background: <br><br>
-🖥️ <strong>Web Development Internship</strong> @ CAPACITI (Current)<br>
-HTML, CSS, JavaScript, Responsive Design & Project Development.<br><br>
+🖥️ <strong>Junior Web Developer</strong> @ CAPACITI (Current)<br>
+Building websites and web applications with hands-on project development.<br><br>
 🎓 <strong>N4, N5 & N6 Tourism</strong> @ False Bay College (2023 – 2024)<br>
 Full Tourism qualification at Muizenberg, Western Cape.<br><br>
 📜 <strong>National Senior Certificate (Grade 12)</strong> @ Phandulwazi High School (2018 – 2022)`
