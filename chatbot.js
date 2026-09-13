@@ -18,9 +18,10 @@ const knowledge = {
     },
     projects: {
         patterns: ['projects', 'project', 'work', 'portfolio', 'built', 'apps', 'applications', 'what has she built', 'capaciti project'],
-        response: () => `Sinawo has built four projects at CAPACITI: <br><br>
+        response: () => `Sinawo has built five projects at CAPACITI: <br><br>
 🔵 <strong>Sinawo App</strong> — A responsive web application showcasing interactive UI and modern web design. <a href="https://sinawo.lovable.app/" target="_blank">View Live ↗</a><br><br>
 🟣 <strong>GovGuide AI</strong> — An AI-powered app that helps users navigate government services with ease. <a href="https://govguideai.lovable.app/" target="_blank">View Live ↗</a><br><br>
+🔷 <strong>GovGuide AI 2.0</strong> — An upgraded AI government guidance app with improved features and user experience. <a href="https://govguideai-ggyjtx95.manus.space/" target="_blank">View Live ↗</a><br><br>
 🔷 <strong>Travel AI</strong> — An AI travel assistant for trip planning and personalised destination recommendations. <a href="https://travelai-lthrjswg.manus.space/" target="_blank">View Live ↗</a><br><br>
 🟠 <strong>AI Sentiment Analyzer</strong> — A tool that analyses text and detects whether the sentiment is positive, negative, or neutral in real time. <a href="https://aisentiment-sp7zjfjg.manus.space/analyzer" target="_blank">View Live ↗</a>`
     },
