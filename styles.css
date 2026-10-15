@@ -192,6 +192,7 @@ img { max-width: 100%; }
     margin: 0 auto;
     animation: spin-slow 12s linear infinite;
 }
+
 .avatar {
     width: 100%; height: 100%;
     border-radius: 50%;
@@ -225,6 +226,10 @@ img { max-width: 100%; }
 .pill-2 { bottom: 18%; right: -20px; animation: float 3s ease-in-out infinite 0.5s; }
 .pill-3 { top: 28%; left: -20px; animation: float 3s ease-in-out infinite 1s; }
 .pill-4 { bottom: 8%; left: -5px; animation: float 3s ease-in-out infinite 1.5s; }
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
 .pill-5 {
     top: 54%;
     left: -20px;
@@ -232,10 +237,12 @@ img { max-width: 100%; }
     bottom: auto;
     animation: float-js 3s ease-in-out infinite 2s;
 }
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+
+@keyframes float-js {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-8px) rotate(-5deg); }
 }
+
 
 .scroll-down {
     position: absolute;
