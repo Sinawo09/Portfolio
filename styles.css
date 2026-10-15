@@ -225,6 +225,13 @@ img { max-width: 100%; }
 .pill-2 { bottom: 18%; right: -20px; animation: float 3s ease-in-out infinite 0.5s; }
 .pill-3 { top: 28%; left: -20px; animation: float 3s ease-in-out infinite 1s; }
 .pill-4 { bottom: 8%; left: -5px; animation: float 3s ease-in-out infinite 1.5s; }
+.pill-5 {
+    top: 54%;
+    left: -20px;
+    right: auto;
+    bottom: auto;
+    animation: float-js 3s ease-in-out infinite 2s;
+}
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
