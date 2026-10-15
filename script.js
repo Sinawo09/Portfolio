@@ -50,20 +50,36 @@ const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
 
 if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const btn = form.querySelector('button[type="submit"]');
-        btn.textContent = 'Sending...';
+        const originalButtonHtml = btn.innerHTML;
+        note.textContent = 'Sending...';
+        note.style.color = '';
         btn.disabled = true;
 
-        setTimeout(() => {
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { Accept: 'application/json' }
+            });
+            const result = await response.json();
+
+            if (!response.ok || result?.success !== true) {
+                throw new Error(result.message || 'Unable to send your message. Please try again.');
+            }
+
             form.reset();
-            btn.textContent = 'Send Message ✈';
-            btn.disabled = false;
-            note.textContent = '✅ Message sent! I\'ll get back to you soon.';
+            note.textContent = "Message sent! I'll get back to you soon.";
             note.style.color = '#10b981';
-            setTimeout(() => { note.textContent = ''; }, 5000);
-        }, 1500);
+        } catch (error) {
+            note.textContent = error.message || 'Something went wrong. Please try again.';
+            note.style.color = '#ef4444';
+        } finally {
+            btn.innerHTML = originalButtonHtml;
+            btn.disabled = false;
+        }
     });
 }
 

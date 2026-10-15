@@ -496,25 +496,26 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <form class="contact-form" id="contactForm">
+                        <input type="hidden" name="access_key" value="c7ad4a52-c4f8-4c78-90e7-bbab5c8a1e30">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-field" placeholder="Your Name" required>
+                                <input type="text" class="form-field" name="name" placeholder="Your Name" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-field" placeholder="Your Email" required>
+                                <input type="email" class="form-field" name="email" placeholder="Your Email" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-field" placeholder="Subject" required>
+                                <input type="text" class="form-field" name="subject" placeholder="Subject" required>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-field" rows="5" placeholder="Your Message" required></textarea>
+                                <textarea class="form-field" name="message" rows="5" placeholder="Your Message" required></textarea>
                             </div>
                             <div class="col-12 text-center">
                                 <button type="submit" class="btn-main btn-lg-custom">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
                             </div>
                         </div>
                     </form>
-                    <p class="form-note" id="formNote"></p>
+                    <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
                 </div>
             </div>
         </div>
